@@ -1,0 +1,147 @@
+#our-services {
+  display: block;
+  padding: 174px 0;
+  background-color: #e4fdf9;
+
+  @media  (max-width: 907px) {
+    padding: 100px 0;
+  }
+
+  @media ( max-width: 505px) {
+    padding: 70px 0;
+  }
+
+  h2 {
+    display: block;
+    color: #212121;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 36px;
+
+  }
+
+  p {
+    display: block;
+    color: #212121;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    margin-bottom: 110px;
+
+    @media  (max-width: 885px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    li {
+      display: block;
+      background-color: #FFFFFF;
+      margin: 0 12px 24px;
+      flex-basis: 404px;
+      flex-grow: 1;
+      text-align: center;
+
+      @media (max-width: 885px) {
+        margin-left: 0;
+        margin-right: 0;
+        flex-basis: 430px;
+
+
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      img {
+        width: auto;
+        margin: 56px auto 36px;
+
+        &.white {
+          display: none;
+        }
+
+        &.black {
+          display: block;
+        }
+      }
+
+      h3 {
+        display: block;
+        color: #212121;
+        font-family: "Open Sans - Semibold", sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        display: block;
+        color: #212121;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0.75px;
+        margin: 0 46px 46px;
+      }
+
+      a {
+        display: block;
+        color: #212121;
+        font-family: "Open Sans - Semibold", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 150px;
+        line-height: 48px;
+        border: 1px solid #0d0b11;
+        margin: 0 auto 48px;
+
+        @media  (max-width: 585px) {
+          margin-bottom: 30px;
+
+        }
+      }
+
+      &:hover {
+        background-color: #00897b;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+
+        h3 {
+          color: white;
+        }
+
+        p {
+          color: white;
+        }
+
+        a {
+          color: white;
+          border-color: white;
+        }
+
+        img {
+          &.white {
+            display: block;
+          }
+
+          &.black {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

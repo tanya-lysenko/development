@@ -1,0 +1,40 @@
+/* wrapper */
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+main {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  margin: 0 0 0;
+  padding: 0 0 0;
+}
+
+#content {
+  position: relative;
+}
+
+#sidebar {
+  position: relative;
+}
+
+aside {
+  position: relative;
+}
+
+@include layout(1402px);
