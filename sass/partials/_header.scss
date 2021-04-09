@@ -9,14 +9,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
 
     .logo {
       display: block;
 
-
       @media (max-width: 849px) {
         margin: 0 auto 20px;
+      }
+
+      @media (max-width: 699px) {
+        margin: 0;
       }
 
       h1 {
@@ -25,6 +28,24 @@
         font-family: "Open Sans", sans-serif;
         font-size: 25px;
         line-height: 28px;
+      }
+    }
+
+    .menu {
+      display: none;
+
+      @media (max-width: 699px) {
+        display: block;
+        color: #444;
+        cursor: pointer;
+
+        &:hover {
+          color: #000000;
+        }
+      }
+
+      svg {
+        display: block;
       }
     }
 
@@ -37,6 +58,15 @@
         flex-basis: 840px;
       }
 
+      @media (max-width: 699px) {
+        display: none;
+
+        &.open {
+          display: block;
+          padding-top: 44px;
+        }
+      }
+
       ul {
         display: flex;
         flex-direction: row;
@@ -44,7 +74,7 @@
         justify-content: space-between;
         align-items: stretch;
 
-        @media (max-width: 697px) {
+        @media (max-width: 699px) {
           flex-direction: column;
           flex-wrap: nowrap;
           align-items: center;
@@ -53,7 +83,7 @@
         li {
           display: block;
 
-          @media (max-width: 697px) {
+          @media (max-width: 699px) {
             margin-bottom: 10px;
           }
 
@@ -69,6 +99,10 @@
               font-size: 20px;
               font-weight: 400;
               letter-spacing: 1px;
+
+              &:hover {
+                color: #000000;
+              }
             }
           }
 
@@ -91,7 +125,7 @@
           &:first-child {
             margin-left: 0;
 
-            @media (max-width: 697px) {
+            @media (max-width: 699px) {
               margin-left: 20px;
             }
           }

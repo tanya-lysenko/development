@@ -14,6 +14,13 @@
             <a href="#" class="logo">
                 <h1>Your logo</h1>
             </a>
+            <span class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20">
+                    <path fill="currentColor"
+                          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    ></path>
+                </svg>
+            </span>
             <nav>
                 <ul>
                     <li class="text">
@@ -455,13 +462,16 @@
                             </p>
                         </li>
                     </ul>
-                    <form action="#" method="post">
+                    <form action="#" method="post" name="feedback">
                         <fieldset>
                             <div class="fix">
-                                <input type="text" name="name" placeholder="Your NAME" aria-label="name">
+                                <input type="text" name="name" placeholder="Your NAME" aria-label="name"
+                                       autocomplete="off">
                                 <div class="gutter"></div>
-                                <input type="text" name="email" id="email" placeholder="Your Email" aria-label="email">
-                                <textarea placeholder="Write Massage" aria-label="message"></textarea>
+                                <input type="text" name="email" id="email" placeholder="Your Email" aria-label="email"
+                                       autocomplete="off">
+                                <textarea name="message" placeholder="Write Massage" aria-label="message"
+                                          autocomplete="off"></textarea>
                                 <button type="submit">SEND</button>
                             </div>
                         </fieldset>
@@ -475,7 +485,6 @@
     </footer>
 </div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
